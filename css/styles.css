@@ -836,6 +836,7 @@ p {
 	.products_category {
 		flex-direction: column;
 		align-items: center;
+		padding-right: 16px;
 	}
 }
 
