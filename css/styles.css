@@ -760,13 +760,13 @@ p {
 
 @media screen and (max-width: 1218px) {
 	.intro,
-	.services,
-	.products {
-	     justify-content: center;
+	.services, {
+	     justify-content: flex-start;
 	}
 	.feedback {
 		width: 100%;
 		padding-left: 1vw;
+		padding-right: 1vw;
 	}
 	.feedback_contacts {
 		flex-wrap: wrap;
@@ -780,16 +780,45 @@ p {
 		width: 100%;
 		max-width: 100%;
 	}
+	.intro-image {
+		width: 100%;
+		height: auto;
+	}
+	.product {
+		margin-left: 2px;
+		margin-right: 2px;
+
+	}
 }
 
+@media screen and (max-width: 1125px) {
+	.intro-content {
+		width: 100%
+	}
+	
+}
+
+
 @media screen and (max-width: 710px) {
+	.header-menu {
+		flex-direction: column;
+	}
+    .menu-item {
+    	min-height: 20px;
+    }
 	.team_members {
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.intro-content {
+		width: 100%;
+	}
+	.intro-main-text {
+		font-size: 45px;
+	}
 	.intro_image {
 		width: 100%;
-		height: auto;
+		height: 100%;
 	}
 	.intro-image-link {
 		width: 100%;
@@ -801,13 +830,20 @@ p {
 	.feedback_button {
 		width: 100%;
 	}
-}
-@media screen and (max-width: 600px) {
-	
+	.products {
+		justify-content: space-around;
+	}
+	.products_category {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 470px) {
+	.intro-main-text {
+		font-size: 30px;
+	}
 	.subscribe_form {
 		flex-wrap: wrap;
 	}
